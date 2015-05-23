@@ -1,6 +1,6 @@
-itemGroup.tabNR=核电工艺
+﻿itemGroup.tabNR=核电工艺
 
-entity.NuclearMonster.name=Nuclear Monster
+entity.NuclearMonster.name=核怪兽
 entity.Paul.name=Paul
 
 copperOre.name=铜矿石
