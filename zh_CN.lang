@@ -1,6 +1,6 @@
 itemGroup.tabNR=核电工艺
 
-entity.NuclearMonster.name=Nuclear Monster
+entity.NuclearMonster.name=核怪兽
 entity.Paul.name=Paul
 
 copperOre.name=铜矿石
@@ -23,6 +23,7 @@ thoriumBlock.name=钍块
 toughBlock.name=高强度合金块
 lithiumBlock.name=锂块
 boronBlock.name=硼块
+aluminiumBlock.name=铝块
 
 tile.graphiteBlock.name=石墨块
 tile.cellBlock.name=燃料棒组件
@@ -33,6 +34,7 @@ tile.nuke.name=核弹
 tile.accStraight1.name=横向加强管道
 tile.accStraight2.name=纵向加强管道
 
+tile.liquidhelium.name=液氦
 
 tile.nuclearFurnaceIdle.name=核熔炉
 tile.nuclearFurnaceActive.name=核熔炉
@@ -54,11 +56,46 @@ tile.fissionReactorGraphiteIdle.name=反应堆控制器
 tile.fissionReactorGraphiteActive.name=反应堆控制器
 tile.nuclearWorkspace.name=重型装配台
 tile.fusionReactor.name=核聚变反应堆 (WIP)
+tile.fusionReactorBlock.name=核聚变反应堆 (WIP)
 tile.RTG.name=放射性同位素温差发电机
 tile.collectorIdle.name=氦收集器
 tile.collectorActive.name=氦收集器
+tile.electrolyserIdle.name=电解机
+tile.electrolyserActive.name=电解机
+tile.oxidiserIdle.name=氧化机
+tile.oxidiserActive.name=氧化机
 
-tile.radioactiveWater.name=Radioactive Water
+gui.reactor=反应堆
+gui.fuel=燃料
+gui.heat=热量
+gui.noFuel=无燃料
+gui.casingIncomplete=外壳不完整
+gui.multipleControllers=多个控制器
+gui.fuelRodIncomplete=燃料棒不完整
+gui.casingInInterior=内部有外壳
+gui.LEU=低浓缩铀
+gui.HEU=高浓缩铀
+gui.LEP=低浓缩钚
+gui.HEP=高浓缩钚
+gui.MOX=铀钚混合氧化物燃料
+gui.TBU=TBU(钍转铀)
+
+gui.energyStored=能量存储
+gui.level1=Level 1
+gui.level2=Level 2
+gui.reactorSize=反应堆大小
+gui.efficiency=效率
+gui.temp=温度
+gui.heatVar=温度变化
+gui.input=输入
+gui.output=输出
+gui.cells=单元
+
+gui.heavyDuty=重型
+gui.workspace=装配台
+
+gui.reaction=反应
+gui.generator=发电机
 
 uraniumIngot.name=铀锭
 copperIngot.name=铜锭
@@ -69,11 +106,15 @@ thoriumIngot.name=钍锭
 bronzeIngot.name=青铜锭
 lithiumIngot.name=锂锭
 boronIngot.name=硼锭
+aluminiumIngot.name=铝锭
 
 item.dominoes.name=Domino的特色菜
+item.boiledEgg.name=煮鸡蛋
 item.upgrade.name=反应堆升级组件
 item.upgradeSpeed.name=速度升级
 item.upgradeEnergy.name=能量升级
+item.nuclearGrenade.name=核手雷
+item.portableEnderChest.name=便携末影箱
 
 U238.name=铀-238
 tinyU238.name=一小块铀-238
@@ -98,44 +139,44 @@ Li7.name=锂-7
 B10.name=硼-10
 B11.name=硼-11
 
-LEU235.name=核燃料-LEU235
-HEU235.name=核燃料-HEU235
-LEP239.name=核燃料-LEP239
-HEP239.name=核燃料-HEP239
-MOX239.name=核燃料-MOX239
-LEU233.name=核燃料-LEU233
-HEU233.name=核燃料-HEU233
-LEP241.name=核燃料-LEP241
-HEP241.name=核燃料-HEP241
-MOX241.name=核燃料-MOX241
-TBU.name=核燃料-TBU
+LEU235.name=低浓缩铀-235
+HEU235.name=高浓缩铀-235
+LEP239.name=低浓缩钚-239
+HEP239.name=高浓缩钚-239
+MOX239.name=铀钚混合氧化物燃料(MOX-239)
+LEU233.name=低浓缩铀233
+HEU233.name=高浓缩铀233
+LEP241.name=低浓缩钚241
+HEP241.name=高浓缩钚241
+MOX241.name=铀钚混合氧化物燃料(MOX-241)
+TBU.name=TBU(钍转铀)
 
-emptyCell.name=空燃料棒
-LEUCell235.name=LEU-235燃料棒
-HEUCell235.name=HEU-235燃料棒
-LEPCell239.name=LEP-239燃料棒
-HEPCell239.name=HEP-239燃料棒
-MOXCell239.name=MOX-239燃料棒
-LEUCell233.name=LEU-233燃料棒
-HEUCell233.name=HEU-233燃料棒
-LEPCell241.name=LEP-241燃料棒
-HEPCell241.name=HEP-241燃料棒
-MOXCell241.name=MOX-241燃料棒
-TBUCell.name=TBU燃料棒
+emptyCell.name=空单元
+LEUCell235.name=低浓缩铀-235单元
+HEUCell235.name=高浓缩铀-235单元
+LEPCell239.name=低浓缩钚-239单元
+HEPCell239.name=高浓缩钚-239单元
+MOXCell239.name=铀钚混合氧化物燃料(MOX-239)单元
+LEUCell233.name=低浓缩铀-233单元
+HEUCell233.name=高浓缩铀-233单元
+LEPCell241.name=低浓缩钚-241单元
+HEPCell241.name=高浓缩钚-241单元
+MOXCell241.name=铀钚混合氧化物燃料(MOX-241)单元
+TBUCell.name=TBU(钍转铀)单元
 
-dLEUCell235.name=枯竭LEU-235燃料棒
-dHEUCell235.name=枯竭HEU-235燃料棒
-dLEPCell239.name=枯竭LEP-239燃料棒
-dHEPCell239.name=枯竭HEP-239燃料棒
-dMOXCell239.name=枯竭MOX-239燃料棒
-dLEUCell233.name=枯竭LEU-233燃料棒
-dHEUCell233.name=枯竭HEU-233燃料棒
-dLEPCell241.name=枯竭LEP-241燃料棒
-dHEPCell241.name=枯竭HEP-241燃料棒
-dMOXCell241.name=枯竭MOX-241燃料棒
-dTBUCell.name=枯竭TBU燃料棒
+dLEUCell235.name=枯竭的低浓缩铀-235单元
+dHEUCell235.name=枯竭的高浓缩铀-235单元
+dLEPCell239.name=枯竭的低浓缩钚-239单元
+dHEPCell239.name=枯竭的高浓缩钚-239单元
+dMOXCell239.name=枯竭的铀钚混合氧化物燃料(MOX-239)单元
+dLEUCell233.name=枯竭的低浓缩铀-233单元
+dHEUCell233.name=枯竭的高浓缩铀-233单元
+dLEPCell241.name=枯竭的低浓缩钚-241单元
+dHEPCell241.name=枯竭的高浓缩钚-241单元
+dMOXCell241.name=枯竭的铀钚混合氧化物燃料(MOX-241)单元
+dTBUCell.name=枯竭的TBU(钍转铀)单元
 
-RTGCell.name=放射性同位素温差靶丸
+RTGCell.name=放射性同位素燃料靶丸
 
 H2OCell.name=水单元
 OCell.name=氧单元
@@ -150,11 +191,12 @@ B10Cell.name=硼-10单元
 B11Cell.name=硼-11单元
 emptyFluidCell.name=空流体单元
 
-simpleNeutronReflector.name=基板
+simpleNeutronReflector.name=中子反射板
 ironPlating.name=铁板
 conGrind.name=燧石研磨头
-advancedNeutronReflector.name=强化基板
+advancedNeutronReflector.name=高级中子反射板
 tinPlating.name=锡板
+iWater.name=无限水源
 
 crushedIron.name=铁粉
 crushedGold.name=金粉
@@ -172,6 +214,8 @@ crushedThorium.name=钍粉
 crushedBronze.name=青铜粉
 crushedLithium.name=锂粉
 crushedBoron.name=硼粉
+crushedAluminium.name=铝粉
+crushedObsidian.name=黑曜石粉
 
 tinyCrushedLead.name=很小一撮铅粉
 
@@ -186,7 +230,8 @@ item.toughAlloyShovel.name=高强度合金铲
 item.toughAlloyAxe.name=高强度合金斧
 item.toughAlloyHoe.name=高强度合金锄
 item.toughAlloySword.name=高强度合金剑
-item.toughAlloyPaxel.name=高强度合金万用工具
+item.toughAlloyPaxel.name=高强度合金镐尖斧
+item.toughBow.name=高强度合金弓
 
 item.toughHelm.name=高强度合金头盔
 item.toughChest.name=高强度合金胸甲
@@ -196,11 +241,14 @@ item.boronHelm.name=硼头盔
 item.boronChest.name=硼胸甲
 item.boronLegs.name=硼护腿
 item.boronBoots.name=硼靴子
+item.bronzeHelm.name=青铜头盔
+item.bronzeChest.name=青铜胸甲
+item.bronzeLegs.name=青铜护腿
+item.bronzeBoots.name=青铜靴子
 
-universalReactant.name=万能材料
+universalReactant.name=通用反应粉
 reactionVessel.name=小型核反应室
 toughAlloy.name=高强度合金锭
 toughDust.name=高强度合金粉
 
-container.nuclearFurnace=核能熔炉
-container.electricFurnace=电力熔炉
+death.attack.heliumfreeze=%1$s冻死在液氦中

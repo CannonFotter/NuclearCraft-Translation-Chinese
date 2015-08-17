@@ -34,6 +34,8 @@ tile.nuke.name=Nuke
 tile.accStraight1.name=Horizontal Reinforced Tubing
 tile.accStraight2.name=Vertical Reinforced Tubing
 
+tile.liquidhelium.name=Liquid Helium
+
 tile.nuclearFurnaceIdle.name=Nuclear Furnace
 tile.nuclearFurnaceActive.name=Nuclear Furnace
 tile.furnaceIdle.name=Metal Furnace
@@ -60,8 +62,40 @@ tile.collectorIdle.name=Helium Collector
 tile.collectorActive.name=Helium Collector
 tile.electrolyserIdle.name=Electrolyser
 tile.electrolyserActive.name=Electrolyser
+tile.oxidiserIdle.name=Oxidiser
+tile.oxidiserActive.name=Oxidiser
 
-tile.liquidhelium.name=Liquid Helium
+gui.reactor=Reactor
+gui.fuel=Fuel
+gui.heat=Heat
+gui.noFuel=No Fuel
+gui.casingIncomplete=Casing Incomplete
+gui.multipleControllers=Multiple Controllers
+gui.fuelRodIncomplete=Fuel Rod Incomplete
+gui.casingInInterior=Casing In Interior
+gui.LEU=LEU
+gui.HEU=HEU
+gui.LEP=LEP
+gui.HEP=HEP
+gui.MOX=MOX
+gui.TBU=TBU
+
+gui.energyStored=Energy Stored
+gui.level1=Level 1
+gui.level2=Level 2
+gui.reactorSize=Reactor Size
+gui.efficiency=Efficiency
+gui.temp=Temperature
+gui.heatVar=Heat Variable
+gui.input=Input
+gui.output=Output
+gui.cells=Cells
+
+gui.heavyDuty=Heavy Duty
+gui.workspace=Workspace
+
+gui.reaction=Reaction
+gui.generator=Generator
 
 uraniumIngot.name=Uranium Ingot
 copperIngot.name=Copper Ingot
@@ -75,6 +109,7 @@ boronIngot.name=Boron Ingot
 aluminiumIngot.name=Aluminium Ingot
 
 item.dominoes.name=Domino's Special
+item.boiledEgg.name=Boiled Egg
 item.upgrade.name=Reactor Upgrade
 item.upgradeSpeed.name=Speed Upgrade
 item.upgradeEnergy.name=Energy Upgrade
@@ -180,6 +215,7 @@ crushedBronze.name=Crushed Bronze
 crushedLithium.name=Crushed Lithium
 crushedBoron.name=Crushed Boron
 crushedAluminium.name=Crushed Aluminium
+crushedObsidian.name=Crushed Obsidian
 
 tinyCrushedLead.name=Small Pile of Crushed Lead
 
@@ -205,8 +241,14 @@ item.boronHelm.name=Boron Helmet
 item.boronChest.name=Boron Chestplate
 item.boronLegs.name=Boron Leggings
 item.boronBoots.name=Boron Boots
+item.bronzeHelm.name=Bronze Helmet
+item.bronzeChest.name=Bronze Chestplate
+item.bronzeLegs.name=Bronze Leggings
+item.bronzeBoots.name=Bronze Boots
 
 universalReactant.name=Universal Reactant
 reactionVessel.name=Small Nuclear Chamber
 toughAlloy.name=Tough Alloy Ingot
 toughDust.name=Tough Alloy Dust
+
+death.attack.heliumfreeze=%1$s froze to death in a pool of Liquid Helium
