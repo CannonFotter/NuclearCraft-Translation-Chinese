@@ -79,6 +79,10 @@ gui.LEP=低浓缩钚
 gui.HEP=高浓缩钚
 gui.MOX=铀钚混合氧化物燃料
 gui.TBU=TBU(钍转铀)
+gui.LEU-Ox=低浓缩氧化铀
+gui.HEU-Ox=高浓缩氧化铀
+gui.LEP-Ox=低浓缩氧化钚
+gui.HEP-Ox=高浓缩氧化钚
 
 gui.energyStored=能量存储
 gui.level1=Level 1
@@ -90,6 +94,9 @@ gui.heatVar=温度变化
 gui.input=输入
 gui.output=输出
 gui.cells=单元
+
+gui.online=在线
+gui.offline=离线
 
 gui.heavyDuty=重型
 gui.workspace=装配台
@@ -138,6 +145,25 @@ Li6.name=锂-6
 Li7.name=锂-7
 B10.name=硼-10
 B11.name=硼-11
+tinyLi6.name=一小块锂-6
+tinyB10.name=一小块硼-10
+
+uraniumOxideIngot.name=氧化铀锭
+crushedUraniumOxide.name=氧化铀粉
+U238Oxide.name=氧化铀-238
+tinyU238Oxide.name=一小块氧化铀-238
+U235Oxide.name=氧化铀-235
+tinyU235Oxide.name=一小块氧化铀-235
+U233Oxide.name=氧化铀-233
+tinyU233Oxide.name=一小块氧化铀-233
+Pu238Oxide.name=氧化钚-238
+tinyPu238Oxide.name=一小块氧化钚-238
+Pu239Oxide.name=Plutonium-239 Oxide
+tinyPu239Oxide.name=一小块氧化钚-239
+Pu242Oxide.name=Plutonium-242 Oxide
+tinyPu242Oxide.name=一小块氧化钚-242
+Pu241Oxide.name=Plutonium-241 Oxide
+tinyPu241Oxide.name=一小块氧化钚-241
 
 LEU235.name=低浓缩铀-235
 HEU235.name=高浓缩铀-235
@@ -176,6 +202,33 @@ dHEPCell241.name=枯竭的高浓缩钚-241单元
 dMOXCell241.name=枯竭的铀钚混合氧化物燃料(MOX-241)单元
 dTBUCell.name=枯竭的TBU(钍转铀)单元
 
+LEU235Oxide.name=低浓缩氧化铀-235燃料
+HEU235Oxide.name=高浓缩氧化铀-235燃料
+LEP239Oxide.name=低浓缩氧化钚-239燃料
+HEP239Oxide.name=高浓缩氧化钚-239燃料
+LEU233Oxide.name=低浓缩氧化铀-233燃料
+HEU233Oxide.name=高浓缩氧化铀-233燃料
+LEP241Oxide.name=低浓缩氧化钚-241燃料
+HEP241Oxide.name=高浓缩氧化钚-241燃料
+
+LEUCell235Oxide.name=低浓缩氧化铀-235单元
+HEUCell235Oxide.name=高浓缩氧化铀-235单元
+LEPCell239Oxide.name=低浓缩氧化钚-239单元
+HEPCell239Oxide.name=高浓缩氧化钚-239单元
+LEUCell233Oxide.name=低浓缩氧化铀-233单元
+HEUCell233Oxide.name=高浓缩氧化铀-233单元
+LEPCell241Oxide.name=低浓缩氧化钚-241单元
+HEPCell241Oxide.name=高浓缩氧化钚-241单元
+
+dLEUCell235Oxide.name=枯竭的低浓缩氧化铀-235单元
+dHEUCell235Oxide.name=枯竭的高浓缩氧化铀-235单元
+dLEPCell239Oxide.name=枯竭的低浓缩氧化钚-239单元
+dHEPCell239Oxide.name=枯竭的高浓缩氧化钚-239单元
+dLEUCell233Oxide.name=枯竭的低浓缩氧化铀-233单元
+dHEUCell233Oxide.name=枯竭的高浓缩氧化铀-233单元
+dLEPCell241Oxide.name=枯竭的低浓缩氧化钚-241单元
+dHEPCell241Oxide.name=枯竭的高浓缩氧化钚-241单元
+
 RTGCell.name=放射性同位素燃料靶丸
 
 H2OCell.name=水单元
@@ -191,12 +244,19 @@ B10Cell.name=硼-10单元
 B11Cell.name=硼-11单元
 emptyFluidCell.name=空流体单元
 
+emptyCapsule.name=Empty Capsule
+nCapsule.name=Neutron Capsule
+pCapsule.name=Proton Capsule
+eCapsule.name=Electron Capsule
+
 simpleNeutronReflector.name=中子反射板
 ironPlating.name=铁板
 conGrind.name=燧石研磨头
 advancedNeutronReflector.name=高级中子反射板
 tinPlating.name=锡板
 iWater.name=无限水源
+dUPlating.name=Depleted Uranium Plating
+aPlating.name=Advanced Plating
 
 crushedIron.name=铁粉
 crushedGold.name=金粉
@@ -225,6 +285,12 @@ item.bronzeAxe.name=青铜斧
 item.bronzeHoe.name=青铜锄
 item.bronzeSword.name=青铜剑
 
+item.boronPickaxe.name=硼镐
+item.boronShovel.name=硼铲
+item.boronAxe.name=硼斧
+item.boronHoe.name=硼锄
+item.boronSword.name=硼剑
+
 item.toughAlloyPickaxe.name=高强度合金镐
 item.toughAlloyShovel.name=高强度合金铲
 item.toughAlloyAxe.name=高强度合金斧
@@ -233,14 +299,28 @@ item.toughAlloySword.name=高强度合金剑
 item.toughAlloyPaxel.name=高强度合金镐尖斧
 item.toughBow.name=高强度合金弓
 
+item.dUPickaxe.name=枯竭铀镐
+item.dUShovel.name=枯竭铀铲
+item.dUAxe.name=枯竭铀斧
+item.dUHoe.name=枯竭铀锄
+item.dUSword.name=枯竭铀剑
+item.dUPaxel.name=枯竭铀镐尖斧
+
 item.toughHelm.name=高强度合金头盔
 item.toughChest.name=高强度合金胸甲
 item.toughLegs.name=高强度合金护腿
 item.toughBoots.name=高强度合金靴子
+
+item.dUHelm.name=枯竭铀头盔
+item.dUChest.name=枯竭铀胸甲
+item.dULegs.name=枯竭铀护腿
+item.dUBoots.name=枯竭铀靴子
+
 item.boronHelm.name=硼头盔
 item.boronChest.name=硼胸甲
 item.boronLegs.name=硼护腿
 item.boronBoots.name=硼靴子
+
 item.bronzeHelm.name=青铜头盔
 item.bronzeChest.name=青铜胸甲
 item.bronzeLegs.name=青铜护腿
