@@ -255,8 +255,8 @@ conGrind.name=燧石研磨头
 advancedNeutronReflector.name=高级中子反射板
 tinPlating.name=锡板
 iWater.name=无限水源
-dUPlating.name=Depleted Uranium Plating
-aPlating.name=Advanced Plating
+dUPlating.name=枯竭铀板
+aPlating.name=先进板
 
 crushedIron.name=铁粉
 crushedGold.name=金粉
