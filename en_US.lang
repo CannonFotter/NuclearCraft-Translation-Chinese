@@ -3,6 +3,8 @@ itemGroup.tabNR=NuclearCraft
 entity.NuclearMonster.name=Nuclear Monster
 entity.Paul.name=Paul
 
+tile.simple=Simple Quantum Block
+
 copperOre.name=Copper Ore
 tinOre.name=Tin Ore
 leadOre.name=Lead Ore
@@ -25,11 +27,17 @@ lithiumBlock.name=Lithium Block
 boronBlock.name=Boron Block
 aluminiumBlock.name=Aluminium Block
 
+tile.simpleQuantumUp.name=Spin 1/2 Block
+tile.simpleQuantumDown.name=Spin 1/2 Block
+
 tile.graphiteBlock.name=Graphite Block
 tile.cellBlock.name=Fuel Cell Compartment
 tile.reactorBlock.name=Reactor Casing
 tile.coolerBlock.name=Reactor Cooler
+tile.speedBlock.name=Reactor Speed Block
+tile.blastBlock.name=Blast Resistant Block
 tile.nuke.name=Nuke
+tile.machineBlock.name=Machine Base
 
 tile.accStraight1.name=Horizontal Reinforced Tubing
 tile.accStraight2.name=Vertical Reinforced Tubing
@@ -58,12 +66,21 @@ tile.nuclearWorkspace.name=Heavy Duty Workspace
 tile.fusionReactor.name=Fusion Reactor
 tile.fusionReactorBlock.name=Fusion Reactor
 tile.RTG.name=Radioisotope Thermoelectric Generator
+tile.WRTG.name=Weak Radioisotope Thermoelectric Generator
 tile.collectorIdle.name=Helium Collector
 tile.collectorActive.name=Helium Collector
 tile.electrolyserIdle.name=Electrolyser
 tile.electrolyserActive.name=Electrolyser
 tile.oxidiserIdle.name=Oxidiser
 tile.oxidiserActive.name=Oxidiser
+tile.ioniserIdle.name=Ioniser
+tile.ioniserActive.name=Ioniser
+tile.irradiatorIdle.name=Neutron Irradiator
+tile.irradiatorActive.name=Neutron Irradiator
+tile.coolerIdle.name=Supercooler
+tile.coolerActive.name=Supercooler
+tile.factoryIdle.name=Manufactory
+tile.factoryActive.name=Manufactory
 
 gui.reactor=Reactor
 gui.fuel=Fuel
@@ -98,8 +115,7 @@ gui.cells=Cells
 gui.online=Online
 gui.offline=Offline
 
-gui.heavyDuty=Heavy Duty
-gui.workspace=Workspace
+gui.heavyDutyWorkspace=Heavy Duty Workspace
 
 gui.reaction=Reaction
 gui.generator=Generator
@@ -238,6 +254,7 @@ DCell.name=Deuterium Cell
 TCell.name=Tritium Cell
 He3Cell.name=Helium-3 Cell
 He4Cell.name=Helium-4 Cell
+SCHe4Cell.name=Liquid Helium-4 Cell
 Li6Cell.name=Lithium-6 Cell
 Li7Cell.name=Lithium-7 Cell
 B10Cell.name=Boron-10 Cell
@@ -257,6 +274,18 @@ tinPlating.name=Tin Plating
 iWater.name=Infinite Water Source
 dUPlating.name=Depleted Uranium Plating
 aPlating.name=Advanced Plating
+ironGrating.name=Iron Grating
+goldContacts.name=Gold Contact
+copperWiring.name=Copper Wiring
+tinTubing.name=Tin Tubing
+leadPlating.name=Lead Plating
+silverPanel.name=Silver Panel
+bronzeBearing.name=Bronze Bearing
+mechComponent.name=Mechanical Component
+simpleCircuit.name=Simple Circuit
+PVCell.name=PV Cell
+computerPart.name=Computer Part
+aComputerPart.name=Advanced Computer Part
 
 crushedIron.name=Crushed Iron
 crushedGold.name=Crushed Gold
@@ -278,6 +307,9 @@ crushedAluminium.name=Crushed Aluminium
 crushedObsidian.name=Crushed Obsidian
 
 tinyCrushedLead.name=Small Pile of Crushed Lead
+
+item.pistol.name=Pistol
+item.dUBullet.name=DU Bullet
 
 item.bronzePickaxe.name=Bronze Pickaxe
 item.bronzeShovel.name=Bronze Shovel
